@@ -1,0 +1,33 @@
+{
+  "name": "dynodeodm",
+  "version": "1.0.0",
+  "description": "A DynamoDB Object Data Mapper (ODM) library",
+  "main": "dist/src/DynamoODM.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "DynamoDB",
+    "ODM",
+    "Database",
+    "AWS"
+  ],
+  "author": "kzhxxn <kzhxxn@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.609.0",
+    "@aws-sdk/lib-dynamodb": "^3.610.0",
+    "@types/lodash": "^4.17.6",
+    "@types/node": "^20.14.9",
+    "dotenv": "^16.4.5",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
