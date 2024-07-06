@@ -20,6 +20,17 @@ npm install dynodeodm
 
 DynamoODM을 사용하려면 AWS SDK 및 DynamoDB 구성 설정이 필요합니다. `env` 파일을 사용하여 아래의 값을 설정해줍니다.
 
+로컬환경
+
+```env
+AWS_REGION=your-region
+AWS_ACCESS_KEY_ID=your-access-key-id
+AWS_SECRET_ACCESS_KEY=your-secret-access-key
+DYNAMODB_ENDPOINT=http://localhost:8000
+```
+
+배포환경
+
 ```env
 AWS_REGION=your-region
 AWS_ACCESS_KEY_ID=your-access-key-id

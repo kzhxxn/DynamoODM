@@ -70,6 +70,7 @@ class DynamoODM {
     const region = process.env.AWS_REGION;
     const accessKeyId = process.env.AWS_ACCESS_KEY_ID;
     const secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY;
+    const endpoint = process.env.DYNAMODB_ENDPOINT; // 로컬 환경을 위한 엔드포인트
 
     if (!region || !accessKeyId || !secretAccessKey) {
       throw new Error(
@@ -82,6 +83,7 @@ class DynamoODM {
       credentials: {
         accessKeyId,
         secretAccessKey,
+        ...(endpoint && { endpoint }),
       },
     });
   }
