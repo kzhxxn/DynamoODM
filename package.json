@@ -1,8 +1,9 @@
 {
   "name": "dynodeodm",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A DynamoDB Object Data Mapper (ODM) library",
-  "main": "dist/src/DynamoODM.js",
+  "main": "dist/DynamoODM.js",
+  "types": "dist/DynamoODM.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest"
